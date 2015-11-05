@@ -1,0 +1,53 @@
+The Tower
+2d, retro dungeon crawler, player ascends floors
+turn based rpg combat
+no levels, player gets new weapon w / stat boost upon completion of floor boss
+
+character stats are as follows
+hp: current health
+mp: current ether
+maxhp: max hp
+maxmp: maximum mp
+bravery: affects the character's ability to deal / recieve physical damage
+faith: affects the character's ability to deal / recieve ethereal damage
+luck: affects the liklyhood of a faithfull strike
+
+all stats have a base value of ten. gifts get + five, flaws get -5. 
+
+paths
+path of the vagrant
+gift of luck, flaw of faith
+
+path of the acursed
+gift of faith, flaw of luck
+
+path of the conquerer
+gift of bravery, flaw of luck
+
+combat
+turn based, at beginning of each turn, player can choose between, advance (rock), guard (paper), and break (scissors). the enemy will do the same, and enemies follow a 
+predetermined pattern when selecting commands. upon choosing, the game will compare the two choosen commands. directly after, the player and enemy will be presented 
+with a new set of commands. the victor can;
+attack: deal physical damage based on bravery
+cast: deal ethereal damage based on faith
+focus: restore mp
+item: restore hp, consume one item 
+the loser, however, can only focus, or use an item. this process is repeated until the player or enemy runs out of hp. it is important to note that regular enemies 
+will give a hint as to what command they will choose before executing, however the hint will be different for each enemy. bosses will follow a secret order. you must 
+find the key that reveals the order in which they select commands and memorize it. 
+
+combat flow chart
+load enemy file
+initialize enemy
+process new battle
+"______ emerged!"
+loop:
+exit when enemy or player's hp hits 0
+give player choice between rock, paper, or scissors
+enemy makes random choice, shows hint at what it chooses
+compare enemy choice to player choice
+if player wins:
+player chooses between attacking, casting, focusing, or using an item
+if player looses: 
+enemy attacks; player can heal or focus
+end loop

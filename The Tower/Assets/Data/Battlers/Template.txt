@@ -1,0 +1,10 @@
+Enemy Name
+HP
+MP
+Bravery
+Faith
+Luck
+"Advance Hint"
+"Guard Hint"
+"Break Hint"
+Sprite File % "Assets/Graphics/Sprites/"

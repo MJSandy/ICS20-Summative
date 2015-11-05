@@ -1,0 +1,11 @@
+"Slime"
+10
+0
+5
+5
+5
+"The Slime snarles aggresively!"
+"The Slime readies itself!"
+"The Slime watches intently"
+"Assets/Graphics/Sprites/Slime"
+
